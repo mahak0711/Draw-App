@@ -1,5 +1,5 @@
 {
-  "name": "http-backend",
+  "name": "ws-backend",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
@@ -8,19 +8,17 @@
     "dev": "npm run build && npm run start"
   },
   "dependencies": {
-    "@repo/typescript-config": "workspace:*",
-    "express": "^4.21.2",
+    "@types/jsonwebtoken": "^9.0.7",
+    "jsonwebtoken": "^9.0.2",
     "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@repo/typescript-config": "workspace:*",
+    "@types/ws": "^8.5.13",
+    "@repo/backend-common": "workspace:*"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
-  "devDependencies": {
-    "@types/express": "^5.0.0",
-    "@types/node": "^22.10.5",
-    "@types/ws": "^8.5.13",
-    "ts-node-dev": "^2.0.0",
-    "typescript": "^5.7.3"
-  }
+  "description": ""
 }
